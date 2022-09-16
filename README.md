@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# BookStore CMS
 
-> This is a calculator app project which is able to do the bisic math operations.
+> This is a book store cms project which is able to do the bisic math operations.
 
 
 ## Built With
