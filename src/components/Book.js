@@ -10,6 +10,9 @@ const Book = ({ title, author }) => (
     <p className="author">
       {author}
     </p>
+    <button className="removeBtn" type="button">
+      Remove Book
+    </button>
   </div>
 );
 
