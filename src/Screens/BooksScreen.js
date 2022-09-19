@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Header from '../components/Header';
 import Book from '../components/Book';
 import BookForm from '../components/BookForm';
 
 const Books = () => {
-  const [books] = useState([]);
+  const books = useSelector((state) => state.books.books);
   return (
     <>
       <Header />
       <div className="booksContainer">
-        {
-         books.map((book) => (
-           <Book key={book.id} tilte={book.tilte} author={book.author} />
-         ))
-       }
+        { books && books.map((book) => (
+          <Book key={book.id} title={book.title} author={book.author} />
+        ))}
 
         <BookForm />
       </div>
