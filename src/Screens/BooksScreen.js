@@ -12,7 +12,7 @@ const Books = () => {
       <Header />
       <div className="booksContainer">
         { books && books.map((book) => (
-          <Book key={book.id} title={book.title} author={book.author} />
+          <Book key={book.id} id={book.id} title={book.title} author={book.author} />
         ))}
 
         <BookForm />
