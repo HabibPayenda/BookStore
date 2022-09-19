@@ -9,16 +9,13 @@ export const categoriesSlice = createSlice({
   name: 'catagories',
   initialState,
   reducers: {
-    addCategory: (state, action) => {
+    checkStatus: (state, action) => {
       state.categories.push(action.payload);
-    },
-    removeCategory: (state, action) => {
-      state.categories = state.categories.filter((book) => book.id !== action.payload.id);
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { removeBook, addBook } = categoriesSlice.actions;
+export const { checkStatus } = categoriesSlice.actions;
 
 export default categoriesSlice.reducer;

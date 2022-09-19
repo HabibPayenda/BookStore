@@ -18,7 +18,6 @@ function App() {
           <Route path="categories" element={<CategoriesScreen />} />
         </Routes>
       </BrowserRouter>
-      ;
     </div>
   );
 }
