@@ -15,15 +15,14 @@ const Book = ({ id, title, author }) => {
       <p className="author">
         {author}
       </p>
-      <button className="removeBtn" type="button" onClick={() => dispatch(removeBook({ id }))}>
+      <button className="removeBtn" type="button" onClick={() => dispatch(removeBook(id))}>
         Remove Book
       </button>
     </div>
   );
 };
-
 Book.propTypes = {
-  id: propTypes.number.isRequired,
+  id: propTypes.string.isRequired,
   title: propTypes.string.isRequired,
   author: propTypes.string.isRequired,
 };
