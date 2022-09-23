@@ -11,25 +11,36 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  background-color: #fafafa;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-  height: 100px;
-  padding: 20px;
+  justify-content: center;
+  width: 87.5rem;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .logo {
-  flex: 1;
-  font-size: 20px;
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .nav {
-  flex: 3;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -38,10 +49,32 @@
 }
 
 .nav a {
-  text-transform: uppercase;
-  font-size: 14px;
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
   text-decoration: none;
-  color: black;
+  text-transform: uppercase;
+}
+
+.categories {
+  width: 6.563rem;
+  height: 1rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
 .booksContainer {
@@ -51,16 +84,6 @@
   justify-content: center;
   width: 100%;
 }
-
-/* .bookCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  background-color: aqua;
-  width: 80%;
-  height: 80px;
-} */
 
 .bookCard {
   display: flex;
@@ -134,7 +157,7 @@
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .circle {
@@ -242,7 +265,7 @@
   width: 35.5rem;
   height: 2.813rem;
   margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  padding: 0.813rem 1.063rem 0.813rem 1.063rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -279,4 +302,5 @@
 
 .formContainer {
   width: 75rem;
+  margin-bottom: 40px;
 }
