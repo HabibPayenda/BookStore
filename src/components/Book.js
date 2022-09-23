@@ -21,9 +21,11 @@ const Book = ({ id, title, author }) => {
           <button className="btn" type="button">
             Comments
           </button>
+          <div className="btnLine" />
           <button className="removeBtn btn" type="button" onClick={() => dispatch(removeBook(id))}>
-            Remove Book
+            Remove
           </button>
+          <div className="btnLine" />
           <button className="btn" type="button">
             Edit
           </button>
@@ -31,11 +33,14 @@ const Book = ({ id, title, author }) => {
       </div>
 
       <div className="bookCardMiddle">
+        <i className="fas fa-circle-notch circle" />
         <div>
-          <h4>64%</h4>
-          <p>Completed</p>
+          <h4 className="percent">98%</h4>
+          <p className="completed">Completed</p>
         </div>
       </div>
+
+      <div className="completeLine" />
 
       <div className="bookCardRight">
         <p className="chapter">
