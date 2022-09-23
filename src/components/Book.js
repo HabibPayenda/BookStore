@@ -9,15 +9,51 @@ const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
   return (
     <div className="bookCard">
-      <p className="title">
-        {title}
-      </p>
-      <p className="author">
-        {author}
-      </p>
-      <button className="removeBtn" type="button" onClick={() => dispatch(removeBook(id))}>
-        Remove Book
-      </button>
+      <div className="bookCardLeft">
+        <p className="genere">Action</p>
+        <p className="title">
+          {title}
+        </p>
+        <p className="author">
+          {author}
+        </p>
+        <div className="btnContainer">
+          <button className="btn" type="button">
+            Comments
+          </button>
+          <div className="btnLine" />
+          <button className="removeBtn btn" type="button" onClick={() => dispatch(removeBook(id))}>
+            Remove
+          </button>
+          <div className="btnLine" />
+          <button className="btn" type="button">
+            Edit
+          </button>
+        </div>
+      </div>
+
+      <div className="bookCardMiddle">
+        <i className="fas fa-circle-notch circle" />
+        <div>
+          <h4 className="percent">98%</h4>
+          <p className="completed">Completed</p>
+        </div>
+      </div>
+
+      <div className="completeLine" />
+
+      <div className="bookCardRight">
+        <p className="chapter">
+          current chapter
+        </p>
+        <p className="chapterNumber">
+          chapter 17
+        </p>
+        <button type="button" className="chapterButton">
+          update progress
+        </button>
+      </div>
+
     </div>
   );
 };

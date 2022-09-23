@@ -26,9 +26,9 @@ const BookForm = () => {
 
   return (
     <div className="formContainer">
-      <p className="addBook">Add Book</p>
-      <input type="text" placeholder="Book Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-      <input type="text" placeholder="Book Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
+      <p className="addBook">Add new Book</p>
+      <input className="titleInput" type="text" placeholder="Book Title" value={title} onChange={(e) => setTitle(e.target.value)} />
+      <input className="authorInput" type="text" placeholder="Book Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
       <button
         className="formBtn"
         type="button"

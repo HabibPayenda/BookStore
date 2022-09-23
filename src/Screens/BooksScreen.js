@@ -26,6 +26,8 @@ const Books = () => {
           />
         ))}
 
+        <hr />
+
         <BookForm />
       </div>
     </>
