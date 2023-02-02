@@ -29,7 +29,7 @@ const Book = ({ id, title, author }) => {
             Remove
           </button>
           <div className="btnLine" />
-          <Link to="book/edit">
+          <Link to="book/edit" state={{ title, author }}>
             <button className="btn" type="button">
               Edit
             </button>
@@ -54,9 +54,11 @@ const Book = ({ id, title, author }) => {
         <p className="chapterNumber">
           chapter 17
         </p>
-        <button type="button" className="chapterButton">
-          update progress
-        </button>
+        <Link to="book/update">
+          <button type="button" className="chapterButton">
+            update progress
+          </button>
+        </Link>
       </div>
 
     </div>

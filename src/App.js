@@ -9,6 +9,7 @@ import BooksScreen from './Screens/BooksScreen';
 import CategoriesScreen from './Screens/CategoriesScreen';
 import Comment from './components/Comment';
 import Edit from './components/Edit';
+import Update from './components/UpdateProgress';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<BooksScreen />} />
           <Route index element={<BooksScreen />} />
           <Route path="book/comments" element={<Comment />} />
+          <Route path="book/update" element={<Update />} />
           <Route path="book/edit" element={<Edit />} />
           <Route path="categories" element={<CategoriesScreen />} />
         </Routes>
