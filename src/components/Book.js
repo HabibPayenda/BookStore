@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import propTypes from 'prop-types';
 
@@ -18,17 +19,21 @@ const Book = ({ id, title, author }) => {
           {author}
         </p>
         <div className="btnContainer">
-          <button className="btn" type="button">
-            Comments
-          </button>
+          <Link to="book/comments">
+            <button className="btn" type="button">
+              Comments
+            </button>
+          </Link>
           <div className="btnLine" />
           <button className="removeBtn btn" type="button" onClick={() => dispatch(removeBook(id))}>
             Remove
           </button>
           <div className="btnLine" />
-          <button className="btn" type="button">
-            Edit
-          </button>
+          <Link to="book/edit">
+            <button className="btn" type="button">
+              Edit
+            </button>
+          </Link>
         </div>
       </div>
 
